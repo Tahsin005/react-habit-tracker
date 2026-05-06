@@ -1,75 +1,47 @@
-# React + TypeScript + Vite
+# ✨ Premium Habit Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A state-of-the-art, visually stunning habit tracking application built with **React**, **TypeScript**, and **Tailwind CSS**. Designed with a focus on premium aesthetics, fluid animations, and a seamless mobile experience.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **💎 Premium Aesthetic**: Modern dark mode with glassmorphism effects, radial gradients, and a clean "Outfit" typography.
+- **✨ Fluid Animations**: Smooth, bouncy micro-interactions and page transitions powered by **Framer Motion**.
+- **📱 Mobile Optimized**: Fully responsive design with optimized layouts for smartphones and tablets.
+- **📊 Progress Tracking**: Real-time progress bar in the header and visual 7-day habit grid.
+- **🔥 Streak System**: Keep motivated with glowing streak indicators for your consistent habits.
+- **🛠️ Tech Stack**:
+  - **Framework**: React 19 + Vite
+  - **Styling**: Tailwind CSS v4
+  - **Icons**: Lucide React
+  - **Animation**: Framer Motion
+  - **Date Utilities**: date-fns
 
-## React Compiler
+## 🛠️ Getting Started
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm or yarn
 
-Note: This will impact Vite dev & build performances.
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `src/components`: Premium UI components (Button, Header, HabitForm, HabitList).
+- `src/context`: State management for habits using React Context.
+- `src/hooks`: Custom hooks for local storage and utility functions.
+- `src/index.css`: Custom design tokens and global glassmorphism styles.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎨 Design Philosophy
+The UI is designed to be "Alive". Every interaction provides visual feedback, from the bouncy button taps to the smooth expansion of the progress bar. We use a sophisticated color palette of Indigo, Amber, and Emerald to indicate progress and consistency.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Built with passion for progress.
